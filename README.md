@@ -1,2 +1,2 @@
-# MemBrain-DeepRL
-Blackjack optimal strategy finder with reinforcement learning and other tools for MemBrain Windows NN
+# Blackjack-RL
+Blackjack optimal strategy finder with reinforcement learning and other tools
