@@ -64,7 +64,9 @@ public class MemBrain_BlackJack_Main {
 		System.out.println();
 		//-----------------------------------------------------------
 		// Load training data *.csv from Blackjack-Sim
-		String file_lesson = (path + "Blackjack-Simulator\\MB_data_in\\MB_BlackJack.csv");
+		String file_lesson = (path + "Blackjack-Simulator\\MB_data_in\\MB_BlackJack.csv"); 
+		MBDllWrapper.MBSetLessonInputCount(input_nn);	// set input count
+		MBDllWrapper.MBSetLessonOutputCount(output_nn);	// set output count
 		MBDllWrapper.MBImportLessonRaw(file_lesson); 
 		if ( MBDllWrapper.GetLastError()==0 ) {
 			System.out.println("SUCCESS: <" + file_lesson + "> loaded");
