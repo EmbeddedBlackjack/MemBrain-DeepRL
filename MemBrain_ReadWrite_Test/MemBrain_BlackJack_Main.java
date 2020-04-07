@@ -105,8 +105,8 @@ public class MemBrain_BlackJack_Main {
 				// Start training phase
 				int teacher_val = MBDllWrapper.MBTeachStep();
 				int teacher_cnt = 1;
-				int MIN_RUNS = 10;
-				while ( (teacher_val == MBDllWrapper.MB_TR_OK) && ((net_cerr-net_perr) > NET_TOL) && (teacher_cnt < MIN_RUNS) ) {
+				int MIN_RUNS = 100;
+				while ( (teacher_val == MBDllWrapper.MB_TR_OK) && ((net_cerr-net_perr) > NET_TOL) || (teacher_cnt < MIN_RUNS) ) {
 					teacher_val = MBDllWrapper.MBTeachStep();
 					net_perr = net_cerr;
 					net_cerr = MBDllWrapper.MBGetLastNetError();
