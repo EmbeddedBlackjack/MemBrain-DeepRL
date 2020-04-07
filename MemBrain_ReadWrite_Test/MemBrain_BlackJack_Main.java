@@ -22,13 +22,13 @@ public class MemBrain_BlackJack_Main {
 		System.out.println(version);
 		
 		// Set path to Neural Net files
-		String path = "C:\\Users\\munis\\Documents\\_code\\Blackjack\\"; 
+		String path = "C:\\Users\\munis\\Documents\\_code\\EmbeddedBlackjack\\"; 
 		
 		
 		System.out.println();
 		//-----------------------------------------------------------
 		// Load Neural Net *.mdl file
-		String file_nn = (path + "Blackjack-RL\\MemBrain_ANNs\\BlackJack_RELU+delay2out_layer1.mbn");
+		String file_nn = (path + "MemBrain-DeepRL\\MemBrain_ANNs\\BlackJack_RELU+delay2out_layer1.mbn");
 		MBDllWrapper.MBLoadNet(file_nn);
 		if ( MBDllWrapper.GetLastError()==0 ) {
 			System.out.println("SUCCESS: net <" + file_nn + "> loaded");
@@ -81,7 +81,7 @@ public class MemBrain_BlackJack_Main {
 		System.out.println();
 		//-----------------------------------------------------------
 		// Load teacher trainer *.mbt
-		String file_teacher = (path + "Blackjack-RL\\MemBrain_ANNs\\Teachers.mbt");
+		String file_teacher = (path + "MemBrain-DeepRL\\MemBrain_ANNs\\Teachers.mbt");
 		MBDllWrapper.MBLoadTeacherFile(file_teacher);
 		if ( MBDllWrapper.GetLastError()==0 ) {
 			System.out.println("SUCCESS: <" + file_teacher + "> loaded");
