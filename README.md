@@ -16,4 +16,4 @@ SARSA (state-action-reward-state-action):
 $$
     Q(s_t,a_t) \leftarrow Q(s_t,a_t) + \alpha [ R_{t+1}+\gamma Q(s_{t+1},a_{t+1})-Q(s_t,a_t) ]
 $$
-where $s_t,a_t$ and $R_t$ are state, action and reward at time step $t$ and $\gamma$ is a discount factor.
+where $s_t,a_t$ and $R_t$ are state, action and reward at time step $t$ and $\gamma$ is a discount factor..
