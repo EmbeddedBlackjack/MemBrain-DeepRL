@@ -1,9 +1,12 @@
 # Blackjack-RL
+
 Blackjack optimal strategy finder with reinforcement learning and other tools
+
 
 ## Possible DeepRL Methods (SARSA vs Q-Learning)
 
 #### When to choose SARSA vs. Q-Learning (stack exchange question)
+
 * https://stats.stackexchange.com/questions/326788/when-to-choose-sarsa-vs-q-learning
 * https://stats.stackexchange.com/questions/361485/why-update-sarsa-with-sa-at-all-if-the-goal-is-a-less-aggressive-exploitation
 
@@ -32,3 +35,8 @@ Q-learning has the following advantages and disadvantages compared to SARSA:
 In practice the last point can make a big difference if mistakes are costly - e.g. you are training a robot not in simulation, but in the real world. You may prefer a more conservative learning algorithm that avoids high risk, if there was real time and money at stake if the robot was damaged.
 
 If your goal is to train an optimal agent in simulation, or in a low-cost and fast-iterating environment, then Q-learning is a good choice, due to the first point (learning optimal policy directly). If your agent learns online, and you care about rewards gained whilst learning, then SARSA may be a better choice.
+
+#### Current plan to use SARSA
+
+* Care about rewards gained whilst learning (not risk lossing lot of money)
+* Learning could be in real-time / real environment
