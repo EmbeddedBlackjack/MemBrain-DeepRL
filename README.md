@@ -2,6 +2,8 @@
 
 Blackjack optimal strategy finder with reinforcement learning and other tools
 
+## Other Java packages not in use, but could be...
+* smile - machine learning / graphics - (https://github.com/haifengl/smile)
 
 ## Possible DeepRL Methods (SARSA vs Q-Learning)
 
